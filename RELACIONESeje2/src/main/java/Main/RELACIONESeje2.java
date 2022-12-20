@@ -22,7 +22,7 @@ public class RELACIONESeje2 {
         System.out.println("Cuantos jugadores creamos para la ruleta rusa? (Maximo 4 jugaroes)");
         Integer resp = leer.nextInt();
         
-        if (resp < 1 || resp > 4) {
+        if (resp < 1 || resp > 6) {
             System.out.println("Error, por defeto se pondran 4 jugadores");
             resp = 4;
         }

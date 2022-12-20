@@ -1,17 +1,20 @@
 package relacioneseje1.entidades;
 
+import relacioneseje1.enumeraciones.ApellidoPersona;
+import relacioneseje1.enumeraciones.NombrePersona;
+
 
 public class Persona {
     
-    private String nombre;
-    private String apellido;
+    private NombrePersona nombre;
+    private ApellidoPersona apellido;
     private Integer dni;
     private Perro perro;
 
     public Persona() {
     }
 
-    public Persona(String nombre, String apellido, Integer dni, Perro perro) {
+    public Persona(NombrePersona nombre, ApellidoPersona apellido, Integer dni, Perro perro) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
@@ -20,19 +23,19 @@ public class Persona {
     
     //----------------------//
 
-    public String getNombre() {
+    public NombrePersona getNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
+    public void setNombre(NombrePersona nombre) {
         this.nombre = nombre;
     }
 
-    public String getApellido() {
+    public ApellidoPersona getApellido() {
         return apellido;
     }
 
-    public void setApellido(String apellido) {
+    public void setApellido(ApellidoPersona apellido) {
         this.apellido = apellido;
     }
 
@@ -54,7 +57,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + ",\n perro=" + perro + '}';
+        return nombre +" " +apellido+ " "+ dni + " "+ perro;
     }
     
     

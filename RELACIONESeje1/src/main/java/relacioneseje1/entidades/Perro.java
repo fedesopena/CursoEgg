@@ -1,18 +1,27 @@
 
 package relacioneseje1.entidades;
 
+import relacioneseje1.enumeraciones.EdadPerro;
+import relacioneseje1.enumeraciones.NombrePerro;
+import relacioneseje1.enumeraciones.RazaPerro;
+import relacioneseje1.enumeraciones.TamanioPerro;
+
 
 public class Perro {
     
-    private String nombre;
-    private String raza;
-    private Integer edad;
-    private Integer tamanio;
+    private NombrePerro nombre;
+    private RazaPerro raza;
+    private EdadPerro edad;
+    private TamanioPerro tamanio;
 
     public Perro() {
+        nombre = NombrePerro.X;
+        raza = RazaPerro.COLY;
+        edad = EdadPerro.UNO;
+        tamanio = TamanioPerro.CHICO;
     }
 
-    public Perro(String nombre, String raza, Integer edad, Integer tamanio) {
+    public Perro(NombrePerro nombre, RazaPerro raza, EdadPerro edad, TamanioPerro tamanio) {
         this.nombre = nombre;
         this.raza = raza;
         this.edad = edad;
@@ -21,41 +30,41 @@ public class Perro {
     
     //----------------------//
 
-    public String getNombre() {
+    public NombrePerro getNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
+    public void setNombre(NombrePerro nombre) {
         this.nombre = nombre;
     }
 
-    public String getRaza() {
+    public RazaPerro getRaza() {
         return raza;
     }
 
-    public void setRaza(String raza) {
+    public void setRaza(RazaPerro raza) {
         this.raza = raza;
     }
 
-    public Integer getEdad() {
+    public EdadPerro getEdad() {
         return edad;
     }
 
-    public void setEdad(Integer edad) {
+    public void setEdad(EdadPerro edad) {
         this.edad = edad;
     }
 
-    public Integer getTamanio() {
+    public TamanioPerro getTamanio() {
         return tamanio;
     }
 
-    public void setTamanio(Integer tamanio) {
+    public void setTamanio(TamanioPerro tamanio) {
         this.tamanio = tamanio;
     }
-
+    
     @Override
     public String toString() {
-        return "Perro{" + "nombre=" + nombre + ", raza=" + raza + ", edad=" + edad + ", tamanio=" + tamanio + '}';
+        return nombre + " ("+ raza +", "+ edad +", "+ tamanio + ")\n";
     }
     
     
