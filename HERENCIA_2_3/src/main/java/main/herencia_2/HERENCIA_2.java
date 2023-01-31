@@ -30,6 +30,7 @@ public class HERENCIA_2 {
         System.out.println("El precio final de la LAVADORA es $" + L1.getPrecio());
         System.out.println("El precio final del TELEVISOR es $" + T1.getPrecio());
         */
+        
         //-------------------------------------------//
         
         List<Electrodomestico> electrodomesticos = new ArrayList();
